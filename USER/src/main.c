@@ -40,6 +40,7 @@ void main(void)
   Tim2_Init();
   Tim4_Init();
   Tim5_Init();
+  check_current_init();
   //LcdDisplay(1234);
   while(1)
   { 

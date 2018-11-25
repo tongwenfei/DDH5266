@@ -14,5 +14,5 @@
 #define  FAULT_ON()  GPIO_ResetBits(GPIOG,GPIO_Pin_6)
 
 void led_init(void);
-
+void check_current_init(void);
 #endif

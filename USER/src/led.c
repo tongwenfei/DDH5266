@@ -19,6 +19,11 @@ void led_init(void)
   ALARM_OFF();
   FAULT_OFF();
 }
+void check_current_init(void)
+{                                   //GPIOx外围寄存器初始化为它们的默认重置值。
+  GPIO_Init(GPIOC, GPIO_Pin_1, GPIO_Mode_Out_PP_High_Fast); //GPIO初始化推挽输出
+   GPIO_ResetBits(GPIOC,GPIO_Pin_1); 
+}
 
 
 
