@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --backend -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
+& "D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --backend -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
 }
 else
 {
-& "D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --debug_file=$debugfile --backend -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
+& "D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --debug_file=$debugfile --backend -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
 }

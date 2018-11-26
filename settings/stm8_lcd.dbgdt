@@ -1120,7 +1120,7 @@
                     <item>mesure_channel</item>
                     <item>lcd_menu</item>
                     <item>key_value</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

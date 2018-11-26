@@ -13,6 +13,8 @@ uint16_t Buffer[10][8]  = {0};
 #define BUFFER_SIZE            ((uint8_t) 80)
 #define BUFFER_ADDRESS         ((uint32_t)(&Buffer))
 #define ADC_REF_VOLTAGE        0.0008056640625       //(3.30/4096.0)
+#define LEAK_CURRENT_GAIN      			2000
+#define RESIDUAL_CURRENT_GAIN		   	2000
 uint16_t filter_value[8]={0};
 float filter_voltage[8]={0.0};
 const float temp_res[]={
@@ -232,4 +234,16 @@ float vol_to_res(float vol)
 	a=2700.0*vol*1.0;
 	b=330-127*vol*1.0;
 	return a/b;
+}
+float vol_to_leak_current(float vol_mv)
+{
+	float current=0;
+	current=vol_mv*LEAK_CURRENT_GAIN/499.0*(1+27.0/100.0);
+	return current;
+}
+float vol_to_residual_current(float vol_mv)
+{
+	float current=0;
+	current=vol_mv*RESIDUAL_CURRENT_GAIN/499.0*(1+27.0/100.0);
+	return current;
 }

@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --backend -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
+"D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" --backend -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" "--debug_file=%~1" --backend -f "G:\项目\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
+"D:\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\TEST\DDH5266设计文件\DDH5266设计文件\DDH5266\settings\stm8_lcd.Debug.driver.xcl" 
 
 @echo off 
 :end
